@@ -7,9 +7,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Platzi Store')
-    .setDescription('Platzi Store API description')
-    .setVersion('1.0')
+    .setTitle('Product store')
+    .setDescription('product app')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
