@@ -34,14 +34,4 @@ export class RolesController {
     return this.rolesService.remove(id);
   }
 
-  // @Post()
-  // @HttpCode(HttpStatus.GONE)
-  // create(@Body() body: any) {
-  //   return body;
-  // }
-
-  // @Get()
-  // findAll(@Res() response) { 
-  //   response.status(200).send('This action returns all categories');
-  // }
 }
