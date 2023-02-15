@@ -1,6 +1,6 @@
 # Base image
 FROM node:18
-
+EXPOSE 3000
 # Create app directory
 WORKDIR /usr/src/app
 
