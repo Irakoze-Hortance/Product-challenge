@@ -1,6 +1,5 @@
 # Base image
 FROM node:18
-EXPOSE 3000
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -12,6 +11,8 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+EXPOSE 3000
+
 
 # Creates a "dist" folder with the production build
 RUN npm run build
